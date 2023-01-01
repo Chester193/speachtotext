@@ -1,0 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.app {
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #4E586E;
+    text-align: center
+}

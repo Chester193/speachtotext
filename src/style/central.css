@@ -1,0 +1,15 @@
+.central {
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    width: 60%;
+    color: #FFFFFF;
+}
+
+.textey {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    height: 100vh;
+    font-size: xx-large;
+}
