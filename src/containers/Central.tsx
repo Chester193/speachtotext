@@ -1,15 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import "../style/central.css"
+import React from "react";
+import "../style/central.css";
 
-const Central = props => {
+const Central = () => {
   return (
-    <div className='central'>
-      <div className='textey'>Some text here</div>
+    <div className="central">
+      <div className="textey">Some text here</div>
     </div>
-  )
-}
+  );
+};
 
-Central.propTypes = {}
+Central.propTypes = {};
 
-export default Central
+export default Central;
