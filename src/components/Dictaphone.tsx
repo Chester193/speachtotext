@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SpeechRecognition, {
   useSpeechRecognition
 } from 'react-speech-recognition';
@@ -7,8 +7,18 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import { MicFill, MicMuteFill } from 'react-bootstrap-icons';
 
 const Dictaphone = () => {
-  const { transcript, listening, browserSupportsSpeechRecognition } =
-    useSpeechRecognition();
+  const {
+    transcript,
+    listening,
+    browserSupportsSpeechRecognition,
+    finalTranscript
+  } = useSpeechRecognition();
+
+  useEffect(() => {
+    if (finalTranscript !== '') {
+      console.log('got final transcript: ' + finalTranscript);
+    }
+  }, [finalTranscript]);
 
   if (!browserSupportsSpeechRecognition) {
     return <span>Browser doesn't support speech recognition.</span>;
