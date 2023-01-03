@@ -2,5 +2,6 @@
   "compilerOptions": {
     "jsx": "react"
   },
+  "allowJs": true,
   "extends": "./node_modules/@tsconfig/recommended/tsconfig.json"
 }

@@ -1,10 +1,11 @@
-import React from "react";
-import "../style/central.css";
+import React from 'react';
+import Dictaphone from '../components/Dictaphone';
+import '../style/central.css';
 
 const Central = () => {
   return (
     <div className="central">
-      <div className="textey">Some text here</div>
+      <Dictaphone />
     </div>
   );
 };
