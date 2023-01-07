@@ -5,6 +5,7 @@ import SpeechRecognition, {
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import { MicFill, MicMuteFill } from 'react-bootstrap-icons';
+import { CSSTransition } from 'react-transition-group';
 
 const Dictaphone = () => {
   const { transcript, listening, browserSupportsSpeechRecognition } =
@@ -35,11 +36,13 @@ const Dictaphone = () => {
           <MicMuteFill />
         </Button>
       </ButtonGroup>
-      <p>
-        {transcript
-          ? transcript
-          : 'Press the microphone button and start speaking'}
-      </p>
+      <CSSTransition in={transcript ? true : false} timeout={300} classNames="fade">
+        <p>
+          {transcript
+            ? transcript
+            : 'Press the microphone button and start speaking'}
+        </p>
+      </CSSTransition>
     </div>
   );
 };
