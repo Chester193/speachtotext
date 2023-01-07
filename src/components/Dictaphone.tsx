@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import { MicFill, MicMuteFill } from 'react-bootstrap-icons';
 import { CSSTransition } from 'react-transition-group';
+import AnalyzeText from './AnalyzeText';
 
 const Dictaphone: React.FC = () => {
   const {
@@ -32,7 +33,6 @@ const Dictaphone: React.FC = () => {
           variant="record"
           onClick={() => {
             SpeechRecognition.startListening();
-            console.log('abc');
           }}
         >
           <MicFill />
@@ -51,6 +51,10 @@ const Dictaphone: React.FC = () => {
             : 'Press the microphone button and start speaking'}
         </p>
       </CSSTransition>
+      {finalTranscript ?
+          <AnalyzeText text={finalTranscript}/>
+          : <></>
+        }
     </div>
   );
 };
