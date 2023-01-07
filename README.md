@@ -1,4 +1,4 @@
-# Project Title
+# Speach to text with sentiment analysis
 
 A simple react app that reads your mic input, shows it on the screen and then prints the sentiment of sentence you've expressed.
 Project is based on react-speach-recognition library that uses Speach API and azure cognitive services.
