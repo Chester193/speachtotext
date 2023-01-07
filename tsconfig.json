@@ -1,7 +1,24 @@
 {
   "compilerOptions": {
-    "jsx": "react"
+    "jsx": "react",
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6", "dom"],
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": true,
+    "rootDir": "./src"
   },
   "allowJs": true,
+  "include": ["./src"],
+  "exclude": ["node_modules"],
   "extends": "./node_modules/@tsconfig/recommended/tsconfig.json"
 }

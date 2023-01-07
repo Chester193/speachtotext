@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react';
-import SpeechRecognition, {
-  useSpeechRecognition
-} from 'react-speech-recognition';
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import { MicFill, MicMuteFill } from 'react-bootstrap-icons';
 import { CSSTransition } from 'react-transition-group';
 
-const Dictaphone = () => {
+const Dictaphone: React.FC = () => {
   const {
     transcript,
     listening,
