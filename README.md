@@ -11,8 +11,6 @@ Modify azureconfig.json file so that it contains your azure cognitive services U
   <li>npm start</li>
 </ul>
 
-npm install
-
 ### Prerequisites
 
 You need to have active Azure cognitive service resource.
