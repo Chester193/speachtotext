@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { TextAnalyticsClient, AzureKeyCredential } from '@azure/ai-text-analytics';
 
+import config from '../azureconfig.json'; // load config from file
+
 interface Props {
   text: string;
 }
@@ -11,8 +13,8 @@ const AnalyzeText: React.FC<Props> = ({ text }) => {
 
   useEffect(() => {
     const client = new TextAnalyticsClient(
-      '<cognitive service enpoint>',
-      new AzureKeyCredential('<api key>')
+      config.AZURE_API_URI,
+      new AzureKeyCredential(config.AZURE_API_KEY)
     );
 
     client

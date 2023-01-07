@@ -15,7 +15,8 @@
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "declaration": true,
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "resolveJsonModule": true
   },
   "allowJs": true,
   "include": ["./src"],
